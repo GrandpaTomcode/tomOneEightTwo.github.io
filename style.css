@@ -594,4 +594,7 @@ a, a:visited {
   .border {
     width: 90%;
   }
+  .about {
+    margin-left: 10px;
+  }
 }
