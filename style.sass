@@ -1,0 +1,102 @@
+@import 'fonts'
+@import 'normalise'
+@import '_mixins'
+
+html
+  height: 100%
+  margin: 0px
+  padding: 0px
+
+body
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+  background: #AEC8DA
+
+a, a:visited
+  color: inherit
+
+.head
+  text-align: center
+  width: 100%
+  background: #EE537C
+  box-shadow: 0 2px 1px rgba(0,0,0,0.16), 0 2px 1px rgba(0,0,0,0.23)
+  position: fixed
+
+
+.headTitle
+  color: #fff
+  letter-spacing: 6px
+
+.border
+  border-bottom: 4px solid #EE537C
+  width: 95%
+  margin: 0 auto
+
+.body
+  display: flex
+  flex-direction: column
+  flex-grow: 1
+  width: 60%
+  margin: 0 auto
+  margin-top: 100px
+  background: #fff
+  box-shadow: 0 2px 6px rgba(0,0,0,0.16), 0 2px 6px rgba(0,0,0,0.23)
+
+.content
+  width: 100%
+  text-align: center
+  p
+    text-align: left
+    font-size: 16px
+
+.bulletPoints
+  margin-bottom: 20px
+  width: 90%
+  margin: 0 auto
+  li
+    list-style-type: square
+
+.quote
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.footer
+  font-weight: bold
+  width: 100%
+  text-align: center
+  background: #EE537C
+  p
+    color: #fff
+
+/*Images*/
+.catImg
+  width: 90%
+  height: 300px
+
+.headShot
+  width: 200px
+  height: 200px
+  border-radius: 100%
+
+/*Media Queries*/
+@include bp(baby-bear)
+  .headTitle
+    font-size: 2em
+    letter-spacing: 2px
+
+  .body
+    width: 100%
+    margin-top: 19%
+
+  .bulletPoints
+    li
+      margin-left: 10px
+
+  .catImg
+    width: 310px
+    height: 200px
+
+  .border
+    width: 90%
