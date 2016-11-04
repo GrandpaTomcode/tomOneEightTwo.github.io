@@ -482,6 +482,7 @@ body {
           flex-direction: column;
   min-height: 100vh;
   background: white;
+  width: 100%;
 }
 
 a, a:visited {
@@ -499,12 +500,6 @@ a, a:visited {
   letter-spacing: 6px;
 }
 
-.border {
-  border-bottom: 4px solid #EE537C;
-  width: 95%;
-  margin: 0 auto;
-}
-
 .body {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -515,29 +510,39 @@ a, a:visited {
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
-  background: #fff;
+  background: #F5F5F9;
 }
 
 .content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
+}
+
+.col {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-}
-
-.content p {
-  text-align: left;
-  font-size: 16px;
-}
-
-.bulletPoints {
-  margin-bottom: 20px;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.bulletPoints li {
-  list-style-type: square;
+  width: 50%;
 }
 
 .quote {
@@ -553,7 +558,17 @@ a, a:visited {
 }
 
 .footer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: bold;
+  height: 80px;
   width: 100%;
   text-align: center;
   background: #EE537C;
@@ -563,9 +578,13 @@ a, a:visited {
   color: #fff;
 }
 
+.about {
+  width: 70%;
+}
+
 /*Images*/
-.catImg {
-  width: 90%;
+.cleaning {
+  width: 80%;
   height: 300px;
 }
 
@@ -584,17 +603,24 @@ a, a:visited {
   .body {
     width: 100%;
   }
-  .bulletPoints li {
-    margin-left: 10px;
+  .content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .catImg {
-    width: 310px;
-    height: 200px;
+  .col {
+    width: 100%;
   }
   .border {
-    width: 90%;
+    border: 1px solid #EE537C;
+    width: 50%;
+    height: 5%;
   }
-  .about {
-    margin-left: 10px;
+  .cleaning {
+    width: 95%;
+    height: 230px;
   }
 }
