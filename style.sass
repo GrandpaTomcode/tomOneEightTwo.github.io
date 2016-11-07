@@ -1,7 +1,7 @@
 @import 'fonts'
 @import 'normalise'
 @import '_mixins'
-
+/* page styles */
 html
   height: 100%
   margin: 0px
@@ -17,6 +17,7 @@ body
 a, a:visited
   color: inherit
 
+/* Header Styles*/
 .head
   text-align: center
   width: 100%
@@ -26,6 +27,7 @@ a, a:visited
   color: #fff
   letter-spacing: 6px
 
+/* Content styles */
 .body
   display: flex
   flex-direction: column
@@ -38,22 +40,60 @@ a, a:visited
   display: flex
   flex-direction: row
   justify-content: space-around
-  align-items: center
+  align-items: top
   width: 100%
+  margin-top: 30px
+  h2
+    letter-spacing: 3px
+    font-weight: bold
 
 .col
   display: flex
   flex-direction: column
   align-items: center
   text-align: center
-  width: 50%
+  width: 40%
 
-.quote
+.about
+  width: 80%
+  font-size: 1.2em
+  line-height: 1.3em
+
+/*Contact Form*/
+form
   display: flex
   flex-direction: column
-  align-items: center
+  justify-content: center
+  height: 100%
 
-.footer
+input,
+textarea
+  width: 100%
+  margin: 10px
+
+input
+  height: 30px
+
+.formText,
+.formSubmit,
+.formName,
+.formEmail,
+.formPhone
+  border: 1px solid #616161
+  border-radius: 5px
+
+.formSubmit
+  width: 125px
+  height: 40px
+  background: #EE537C
+  color: white
+  border: 0px
+  &:hover
+    background: #EA365D
+    cursor: pointer
+
+/* Footer Styles*/
+#footer
   display: flex
   justify-content: center
   align-items: center
@@ -62,14 +102,15 @@ a, a:visited
   width: 100%
   text-align: center
   background: #EE537C
+  letter-spacing: 3px
   p
     color: #fff
-.about
-  width: 70%
+    font-size: 1.3em
+
 /*Images*/
 .cleaning
-  width: 80%
-  height: 300px
+  width: 95%
+  height: 250px
 
 .headShot
   width: 150px
@@ -94,9 +135,13 @@ a, a:visited
 
   .border
     border: 1px solid #EE537C
-    width: 50%
+    width: 70%
     height: 5%
+    margin: 0 auto
 
   .cleaning
     width: 90%
     height: 250px
+
+  form
+    width: 90%
