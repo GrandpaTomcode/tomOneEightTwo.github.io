@@ -4,8 +4,6 @@
 /* page styles */
 html
   height: 100%
-  margin: 0px
-  padding: 0px
 
 body
   display: flex
@@ -13,10 +11,13 @@ body
   min-height: 100vh
   background: white
   width: 100%
+  margin: 0px
+  padding: 0px
 
 a, a:visited
   color: inherit
-
+li
+  list-style-type: none
 /* Header Styles*/
 .head
   text-align: center
@@ -32,55 +33,73 @@ a, a:visited
   display: flex
   flex-direction: column
   flex-grow: 1
-  width: 100%
-  margin: 0 auto
-  background: #F5F5F9
 
-.content
+.cleaningImg
+  display: flex
+  justify-content: center
+  width: 100%
+  margin: 15px 0px 20px 0px
+
+  .cleaning
+    width: 60%
+    height: 350px
+    margin: 0 auto
+
+
+.aboutContact
   display: flex
   flex-direction: row
-  justify-content: space-around
-  align-items: top
-  width: 100%
-  margin-top: 30px
-  h2
-    letter-spacing: 3px
-    font-weight: bold
+  justify-content: space-between
+  margin-top: 25px
 
-.col
-  display: flex
-  flex-direction: column
-  align-items: center
-  text-align: center
+  .col-two,
+  .col-three
+    width: 50%
+    text-align: center
+
+  .col-two
+    margin-left: 30px
+  .col-three
+    margin-right: 30px
+
+
+.border
+  border: 1px solid #EE537C
   width: 40%
+  height: 5%
+  margin: 0 auto
 
-.about
-  width: 80%
-  font-size: 1.2em
-  line-height: 1.3em
+.points
+  width: 100%
+  h1
+    text-align: center
+
+.pointsIcons
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: baseline
+  text-align: center
+  padding: 0px
 
 /*Contact Form*/
-form
+form,
+.formInput,
+.formMessage,
+.formSubmit
   display: flex
   flex-direction: column
   justify-content: center
-  height: 100%
+  align-items: center
 
-input,
-textarea
-  width: 100%
-  margin: 10px
-
-input
-  height: 30px
-
-.formText,
-.formSubmit,
-.formName,
-.formEmail,
-.formPhone
+.formInput,
+.formMessage
+  width: 70%
   border: 1px solid #616161
   border-radius: 5px
+  height: 30px
+.formMessage
+  height: 125px
 
 .formSubmit
   width: 125px
@@ -88,8 +107,11 @@ input
   background: #EE537C
   color: white
   border: 0px
+  border-radius: 5px
+  margin: 15px
   &:hover
     background: #EA365D
+    transition: background 0.4s ease
     cursor: pointer
 
 /* Footer Styles*/
@@ -105,13 +127,9 @@ input
   letter-spacing: 3px
   p
     color: #fff
-    font-size: 1.2em
+    font-size: 1em
 
 /*Images*/
-.cleaning
-  width: 95%
-  height: 250px
-
 .headShot
   width: 150px
   height: 150px
@@ -126,25 +144,32 @@ input
   .body
     width: 100%
 
-  .content
+    .cleaning
+      width: 95%
+      height: 250px
+  .pointsIcons
+    figcaption
+      font-size: 16px
+  .border
+    display: none
+
+
+  .aboutContact
     display: flex
     flex-direction: column
 
-  .col
-    width: 100%
+    .col-two,
+    .col-three
+      width: 100%
 
-  .col-three
-    margin-bottom: 40px
+    .col-two
+      margin-left: 0px
+    .col-three
+      margin-right: 0px
 
-  .border
+
+  .borderMob
     border: 1px solid #EE537C
     width: 70%
     height: 5%
     margin: 0 auto
-
-  .cleaning
-    width: 90%
-    height: 250px
-
-  form
-    width: 90%
