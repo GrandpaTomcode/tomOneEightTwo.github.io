@@ -18,6 +18,7 @@ a, a:visited
   color: inherit
 li
   list-style-type: none
+
 /* Header Styles*/
 .head
   text-align: center
@@ -33,19 +34,9 @@ li
   display: flex
   flex-direction: column
   flex-grow: 1
-
-.cleaningImg
-  display: flex
-  justify-content: center
-  width: 100%
-  margin: 15px 0px 20px 0px
-
-  .cleaning
-    width: 60%
-    height: 350px
-    margin: 0 auto
-
-
+.col-one
+  h1
+    text-align: center
 .aboutContact
   display: flex
   flex-direction: row
@@ -71,16 +62,21 @@ li
 
 .points
   width: 100%
-  h1
-    text-align: center
 
 .pointsIcons
   display: flex
   flex-direction: row
-  justify-content: space-between
+  justify-content: space-around
   align-items: baseline
   text-align: center
   padding: 0px
+  margin: 15px
+  font-size: 13px
+
+.pointsIcons li
+  display: flex
+  flex-direction: column
+  flex: 1
 
 /*Contact Form*/
 form,
@@ -135,10 +131,22 @@ form,
   height: 150px
   border-radius: 100%
 
+#slideshow
+  margin: 0 auto
+  position: relative
+  width: 80%
+  height: 400px
+
+#slideshow > div > img
+  position: absolute
+  width: 100%
+  height: 400px
+  border-radius: 5px
+
 /*Media Queries*/
 @include bp(baby-bear)
   .headTitle
-    font-size: 2em
+    font-size: 2.5em
     letter-spacing: 2px
 
   .body
@@ -149,10 +157,10 @@ form,
       height: 250px
   .pointsIcons
     figcaption
-      font-size: 16px
+      font-size:
+
   .border
     display: none
-
 
   .aboutContact
     display: flex
@@ -177,3 +185,12 @@ form,
     width: 70%
     height: 5%
     margin: 0 auto
+
+  #slideshow
+    width: 100%
+    height: 250px
+
+  #slideshow > div > img
+    width: 100%
+    height: 250px
+    border-radius: 0px
