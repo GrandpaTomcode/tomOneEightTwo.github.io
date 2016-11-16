@@ -1,6 +1,8 @@
 @import 'fonts'
 @import 'normalise'
 @import '_mixins'
+@import '_mQueries'
+
 /* page styles */
 html
   height: 100%
@@ -21,11 +23,11 @@ li
 
 /* Header Styles*/
 .head
-  text-align: center
   width: 100%
   background: #EE537C
 
 .headTitle
+  text-align: center
   color: #fff
   letter-spacing: 6px
 
@@ -36,6 +38,9 @@ li
   flex-grow: 1
 
 .col-one
+  display: flex
+  flex-direction: row-reverse
+  margin-bottom: 25px
   h1
     text-align: center
 
@@ -62,13 +67,23 @@ li
   height: 5%
   margin: 0 auto
 
+.borderPoints
+  border: 1px solid #EE537C
+  width: 40%
+  margin: 0 auto
+  margin-bottom: 10px
+
 .colTitle,
 .col-two > h2,
 .col-three > h2
   letter-spacing: 5px
-
+.colTitle
+  margin: 10px
 .points
-  width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: 50%
 
 .pointsIcons
   display: flex
@@ -139,19 +154,21 @@ form,
   border-radius: 100%
 
 #slideshowcontainer
-  margin-top: 30px
+  margin-top: 35px
+  margin-right: 25px
+  width: 50%
 
 #slideshow
-  margin: 0 auto
   position: relative
-  width: 80%
+  width: 100%
   height: 400px
 
 #slideshow > div > img
   position: absolute
   width: 100%
   height: 400px
-  border-radius: 5px
+  border-radius: 3px
+  margin-right: 25px
 
 /*Media Queries*/
 @include bp(baby-bear)
@@ -165,9 +182,18 @@ form,
     .cleaning
       width: 95%
       height: 250px
+
+  .col-one
+    display: flex
+    flex-direction: column
+
+  .points
+    display: flex
+    width: 100%
+
   .pointsIcons
     figcaption
-      font-size:
+      font-size: 15px
 
   .border
     display: none
@@ -198,6 +224,7 @@ form,
 
   #slideshowcontainer
     margin-top: 0px
+    width: 100%
 
   #slideshow
     width: 100%
