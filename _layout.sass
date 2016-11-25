@@ -1,0 +1,75 @@
+html, body
+  margin: 0px
+  padding: 0px
+  overflow-x: hidden
+
+.body
+  display: flex
+  flex-direction: column
+
+.content
+  display: flex
+  flex: 1
+
+#colOne
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  height: 100vh
+
+.head
+  display: flex
+  flex-direction: column
+  justify-content: center
+  flex: 1
+
+.icons
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  width: 100%
+  text-align: center
+
+#colTwo
+  display: flex
+  flex-direction: column
+  justify-content: center
+  margin-bottom: 20px
+
+.whoWeAre
+  display: flex
+  justify-content: center
+
+.paraSeperatorContainer
+  display: flex
+  justify-content: center
+  margin: 20px 0px 20px 0px
+
+.paraSeperator
+  border-radius: 7px
+  width: 50%
+  height: 300px
+
+.aboutPara
+  width: 40%
+  text-align: center
+  letter-spacing: 3px
+  margin: 0 auto
+
+.footer
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+  height: 120px
+
+
+
+@include bp(baby-bear)
+  .aboutPara
+    width: 90%
+
+  .paraSeperator
+    width: 90%
