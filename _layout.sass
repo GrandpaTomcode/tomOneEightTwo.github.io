@@ -9,6 +9,7 @@ html, body
 
 .content
   display: flex
+  flex-direction: column
   flex: 1
 
 #colOne
@@ -24,12 +25,18 @@ html, body
   justify-content: center
   flex: 1
 
+.title, .subTitle, .scroll
+  display: none
+
 .icons
   display: flex
   flex-direction: row
   justify-content: space-around
   width: 100%
   text-align: center
+
+.iconsFade
+  display: none
 
 #colTwo
   display: flex
@@ -54,8 +61,20 @@ html, body
 .aboutPara
   width: 40%
   text-align: center
-  letter-spacing: 3px
+  line-height: 1.6
   margin: 0 auto
+
+.whatWeDoContainer
+  text-align: center
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+.whatWeDoPara
+  display: flex
+  align-self: center
+  line-height: 1.43
+  width: 40%
 
 .footer
   display: flex
@@ -72,4 +91,8 @@ html, body
     width: 90%
 
   .paraSeperator
+    width: 90%
+  .whatWeDoPara
+    display: flex
+    align-self: center
     width: 90%

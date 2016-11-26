@@ -1,9 +1,13 @@
-h1 {
+h1, h2 {
   font-family: 'Pacifico', cursive; }
 
-p {
+p, h2, h3 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1em; }
+
+h2 {
+  font-weight: bolder;
+  font-size: 1.2em; }
 
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -428,6 +432,9 @@ html, body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1; }
@@ -461,6 +468,9 @@ html, body {
       -ms-flex: 1;
           flex: 1; }
 
+.title, .subTitle, .scroll {
+  display: none; }
+
 .icons {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -473,6 +483,9 @@ html, body {
           justify-content: space-around;
   width: 100%;
   text-align: center; }
+
+.iconsFade {
+  display: none; }
 
 #colTwo {
   display: -webkit-flex;
@@ -511,8 +524,30 @@ html, body {
 .aboutPara {
   width: 40%;
   text-align: center;
-  letter-spacing: 3px;
+  line-height: 1.6;
   margin: 0 auto; }
+
+.whatWeDoContainer {
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.whatWeDoPara {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  line-height: 1.43;
+  width: 40%; }
 
 .footer {
   display: -webkit-flex;
@@ -534,6 +569,14 @@ html, body {
   .aboutPara {
     width: 90%; }
   .paraSeperator {
+    width: 90%; }
+  .whatWeDoPara {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
     width: 90%; } }
 
 li {
@@ -550,7 +593,7 @@ a:visited {
   color: inherit; }
 
 #colOne {
-  background: #EE537C; }
+  background: #DFA3E6; }
 
 .title {
   font-size: 6em;
@@ -559,10 +602,9 @@ a:visited {
   color: #FFF;
   margin: 0px; }
 
-.titleUnderline {
-  border: 1px solid #fff;
-  margin: 10px;
-  width: 100%; }
+.subTitle {
+  text-align: center;
+  color: #fff; }
 
 .icons {
   color: #fff; }
@@ -574,11 +616,18 @@ a:visited {
 
 .scroll {
   color: #fff;
-  opacity: 0.7;
+  opacity: 0.8;
   font-size: 1.3em; }
 
+#colThree {
+  background: #FA1C62;
+  color: #fff; }
+
+.whatWeDoContainer h2 {
+  font-weight: bolder; }
+
 .footer {
-  background: #363671;
+  background: #9A7ADC;
   color: #fff; }
   .footer p {
     font-size: 17px;
