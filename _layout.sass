@@ -12,11 +12,14 @@ html, body
   flex-direction: column
   flex: 1
 
-#colOne
+.colOne
   display: flex
   flex-direction: column
   justify-content: center
   align-items: center
+  background-image: url(/images/worthingPhoto.jpg)
+  background-position: right
+  background-size: cover
   height: 100vh
 
 .head
@@ -76,6 +79,43 @@ html, body
   line-height: 1.43
   width: 40%
 
+.contactContainer
+  display: flex
+  flex-direction: column
+  justify-content: center
+  text-align: center
+
+.contactFormContainer
+  display: flex
+  justify-content: center
+
+.contactForm
+  display: flex
+  flex-direction: column
+  width: 40%
+
+.formInput::placeholder
+  text-indent: 10px
+
+.formInput
+  border-radius: 3px
+  border: 1px solid #2C343B
+  padding: 5px
+  height: 25px
+
+.submitContainer
+  display: flex
+  justify-content: center
+
+.formSubmit
+  width: 20%
+  padding: 5px
+  height: 35px
+  margin: 10px 10px 30px 10px
+
+.formTextArea
+  height: 125px
+
 .footer
   display: flex
   flex-direction: column
@@ -96,3 +136,9 @@ html, body
     display: flex
     align-self: center
     width: 90%
+
+  .contactForm
+    width: 70%
+
+  .formSubmit
+    width: 50%

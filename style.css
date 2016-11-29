@@ -439,7 +439,7 @@ html, body {
       -ms-flex: 1;
           flex: 1; }
 
-#colOne {
+.colOne {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -452,6 +452,9 @@ html, body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  background-image: url(/images/worthingPhoto.jpg);
+  background-position: right;
+  background-size: cover;
   height: 100vh; }
 
 .head {
@@ -549,6 +552,70 @@ html, body {
   line-height: 1.43;
   width: 40%; }
 
+.contactContainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center; }
+
+.contactFormContainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.contactForm {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%; }
+
+.formInput::-webkit-input-placeholder {
+  text-indent: 10px; }
+
+.formInput::-moz-placeholder {
+  text-indent: 10px; }
+
+.formInput:-ms-input-placeholder {
+  text-indent: 10px; }
+
+.formInput::placeholder {
+  text-indent: 10px; }
+
+.formInput {
+  border-radius: 3px;
+  border: 1px solid #2C343B;
+  padding: 5px;
+  height: 25px; }
+
+.submitContainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.formSubmit {
+  width: 20%;
+  padding: 5px;
+  height: 35px;
+  margin: 10px 10px 30px 10px; }
+
+.formTextArea {
+  height: 125px; }
+
 .footer {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -577,7 +644,11 @@ html, body {
     -webkit-align-self: center;
         -ms-flex-item-align: center;
             align-self: center;
-    width: 90%; } }
+    width: 90%; }
+  .contactForm {
+    width: 70%; }
+  .formSubmit {
+    width: 50%; } }
 
 li {
   list-style-type: none; }
@@ -591,9 +662,6 @@ a {
 
 a:visited {
   color: inherit; }
-
-#colOne {
-  background: #DFA3E6; }
 
 .title {
   font-size: 6em;
@@ -625,6 +693,17 @@ a:visited {
 
 .whatWeDoContainer h2 {
   font-weight: bolder; }
+
+.formSubmit {
+  border: 0px;
+  border-radius: 3px;
+  color: #FFF;
+  background: #9A7ADC;
+  transition: background .5s ease; }
+
+.formSubmit:hover {
+  cursor: pointer;
+  background: #DC7CFE; }
 
 .footer {
   background: #9A7ADC;
