@@ -500,6 +500,7 @@ html, body {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 650px;
   margin-bottom: 20px; }
 
 .whoWeAre {
@@ -615,8 +616,23 @@ html, body {
 .formTextArea {
   height: 125px; }
 
-.facebookFrame {
-  margin: 0 auto; }
+.colFive {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%; }
+
+iframe {
+  margin-bottom: 20px; }
 
 .footer {
   display: -webkit-flex;
@@ -651,6 +667,9 @@ html, body {
     width: 70%; }
   .formSubmit {
     width: 50%; } }
+
+body {
+  line-height: 1.6; }
 
 li {
   list-style-type: none; }
@@ -687,14 +706,14 @@ a:visited {
 .scroll {
   color: #fff;
   opacity: 0.8;
-  font-size: 1.3em; }
+  font-size: 1.2em; }
+
+#colTwo h1, .whatWeDoContainer h1, .colFour h1, .colFive h1 {
+  font-size: 3em; }
 
 #colThree {
   background: #9A7ADC;
   color: #fff; }
-
-.whatWeDoContainer h1 {
-  font-size: 3em; }
 
 .whatWeDoContainer h2 {
   font-weight: bolder; }
@@ -710,6 +729,10 @@ a:visited {
   cursor: pointer;
   background: #DC7CFE; }
 
+.colFive {
+  background: #9A7ADC;
+  color: #FFF; }
+
 .footer {
   background: #9A7ADC;
   color: #fff; }
@@ -721,6 +744,8 @@ a:visited {
 
 @media (max-width: 600px) {
   .title {
-    font-size: 3em; } }
+    font-size: 3em; }
+  .scroll {
+    font-size: 1em; } }
 
 /*# sourceMappingURL=style.css.map */

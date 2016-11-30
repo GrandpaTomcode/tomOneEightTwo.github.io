@@ -2,7 +2,8 @@
 @import 'normalise'
 @import '_mixins'
 @import 'layout'
-
+body
+  line-height: 1.6
 li
   list-style-type: none
 
@@ -39,15 +40,15 @@ a:visited
 .scroll
   color: #fff
   opacity: 0.8
-  font-size: 1.3em
+  font-size: 1.2em
+#colTwo h1, .whatWeDoContainer h1, .colFour h1, .colFive h1
+  font-size: 3em
 
 #colThree
   background: #9A7ADC
   color: #fff
 
 .whatWeDoContainer
-  h1
-    font-size: 3em
   h2
     font-weight: bolder
 
@@ -63,6 +64,9 @@ a:visited
   background: #DC7CFE
 
 
+.colFive
+  background: #9A7ADC
+  color: #FFF
 
 .footer
   background: #9A7ADC
@@ -76,3 +80,6 @@ a:visited
 @include bp(baby-bear)
   .title
     font-size: 3em
+
+  .scroll
+    font-size: 1em
