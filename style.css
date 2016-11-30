@@ -452,7 +452,7 @@ html, body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(/images/worthingPhoto.jpg);
+  background-image: url(/images/lancing.jpg);
   background-position: right;
   background-size: cover;
   height: 100vh; }
@@ -520,7 +520,6 @@ html, body {
   margin: 20px 0px 20px 0px; }
 
 .paraSeperator {
-  border-radius: 7px;
   width: 50%;
   height: 300px; }
 
@@ -615,6 +614,9 @@ html, body {
 
 .formTextArea {
   height: 125px; }
+
+.facebookFrame {
+  margin: 0 auto; }
 
 .footer {
   display: -webkit-flex;
