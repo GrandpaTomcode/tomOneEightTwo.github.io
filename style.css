@@ -418,6 +418,7 @@ template {
 html, body {
   margin: 0px;
   padding: 0px;
+  height: 100%;
   overflow-x: hidden; }
 
 .body {
@@ -425,51 +426,52 @@ html, body {
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 .content {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1; }
+  -ms-flex: 1;
+  flex: 1; }
 
 .colOne {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-image: url(/images/lancing.jpg);
   background-position: right;
   background-size: cover;
-  height: 100vh; }
+  height: 100vh;
+  margin-bottom: 20px; }
 
 .head {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1; }
+  -ms-flex: 1;
+  flex: 1; }
 
 .title, .subTitle, .scroll {
   display: none; }
@@ -479,11 +481,11 @@ html, body {
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   width: 100%;
   text-align: center; }
 
@@ -495,34 +497,52 @@ html, body {
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 650px;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 700px;
   margin-bottom: 20px; }
+
+.colTwo-list {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .whoWeAre {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  -ms-flex-pack: center;
+  justify-content: center; }
 
-.paraSeperatorContainer {
+.headImageContainer {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 20px 0px 20px 0px; }
+  -ms-flex-pack: center;
+  justify-content: center; }
 
-.paraSeperator {
-  width: 50%;
-  height: 300px; }
+.colSeperator {
+  background-image: url(images/bathroom.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; }
+
+.aboutContainer h2 {
+  text-align: center; }
 
 .aboutPara {
   width: 40%;
@@ -535,19 +555,19 @@ html, body {
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .whatWeDoPara {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
   width: 40%; }
 
 .contactContainer {
@@ -555,28 +575,21 @@ html, body {
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: center; }
-
-.contactFormContainer {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
 
 .contactForm {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 auto;
   width: 40%; }
 
 .formInput::-webkit-input-placeholder {
@@ -602,8 +615,8 @@ html, body {
   display: -ms-flexbox;
   display: flex;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .formSubmit {
   width: 20%;
@@ -619,14 +632,14 @@ html, body {
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%; }
 
 iframe {
@@ -637,29 +650,30 @@ iframe {
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   height: 120px; }
 
 @media (max-width: 600px) {
   .aboutPara {
     width: 90%; }
-  .paraSeperator {
-    width: 90%; }
+  .colSeperator {
+    width: 100%;
+    height: 300px; }
   .whatWeDoPara {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-align-self: center;
-        -ms-flex-item-align: center;
-            align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
     width: 90%; }
   .contactForm {
     width: 70%; }
@@ -709,6 +723,13 @@ a:visited {
 #colTwo h1, .whatWeDoContainer h1, .colFour h1, .colFive h1 {
   font-size: 2.5em; }
 
+.headshot {
+  border-radius: 100%;
+  border-radius: 1px solid #9A7ADC;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 25px; }
+
 #colThree {
   background: #9A7ADC;
   color: #fff; }
@@ -736,7 +757,7 @@ a:visited {
   color: #fff; }
   .footer p {
     font-size: 17px;
-    margin: 5px; }
+    margin: 0px; }
   .footer a {
     text-decoration: underline; }
 
@@ -745,5 +766,3 @@ a:visited {
     font-size: 3em; }
   .scroll {
     font-size: 1em; } }
-
-/*# sourceMappingURL=style.css.map */
