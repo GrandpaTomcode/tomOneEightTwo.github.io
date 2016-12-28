@@ -22,8 +22,6 @@ html, body
   background-position: right
   background-size: cover
   height: 100vh
-  margin-bottom: 20px
-
 
 .head
   display: flex
@@ -48,14 +46,7 @@ html, body
   display: flex
   flex-direction: column
   justify-content: center
-  height: 700px
-  margin-bottom: 20px
-
-.colTwo-list
-  display: flex
-  flex-direction: column
-  justify-content: center
-  align-items: center
+  height: 800px
 
 .whoWeAre
   display: flex
@@ -65,16 +56,20 @@ html, body
   display: flex
   justify-content: center
 
-.colSeperator
-  background-image: url(images/bathroom.jpg)
-  background-size: cover
-  background-position: center
-  height: 100vh
 .aboutContainer
   h2
     text-align: center
+
+.phoneNumber
+  display: flex
+  flex-direction: row
+  justify-content: center
+  text-align: center
+  h4
+    text-decoration: underline
+
 .aboutPara
-  width: 40%
+  width: 60%
   text-align: center
   margin: 0 auto
 
@@ -141,11 +136,9 @@ iframe
   text-align: center
   height: 120px
 
-
-
 @include bp(baby-bear)
   .aboutPara
-    width: 90%
+    width: 95%
 
   .colSeperator
     width: 100%
@@ -155,8 +148,13 @@ iframe
     align-self: center
     width: 90%
 
+  .contactContainer
+    h3
+      margin: 0 auto
+      width: 95%
+
   .contactForm
-    width: 70%
+    width: 80%
 
   .formSubmit
     width: 50%
