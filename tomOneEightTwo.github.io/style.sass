@@ -1,0 +1,95 @@
+@import 'fonts'
+@import 'normalise'
+@import '_mixins'
+@import '_layout'
+body
+  line-height: 1.6
+li
+  list-style-type: none
+
+ul
+  padding: 0px
+
+a
+  text-decoration: none
+  color: inherit
+
+a:visited
+  color: inherit
+
+
+.title
+  font-size: 6em
+  letter-spacing: 2px
+  text-align: center
+  color: #FFF
+  margin: 0px
+
+.subTitle
+  text-align: center
+  color: #fff
+
+.icons
+  color: #fff
+
+.icons svg
+  border: 5px solid #fff
+  border-radius: 100%
+  padding: 5px
+
+.scroll
+  color: #fff
+  opacity: 0.8
+  font-size: 1.2em
+
+#colTwo h1, .whatWeDoContainer h1, .colFour h1, .colFive h1
+  font-size: 2.5em
+
+.aboutPara
+  font-size: 1.2em
+
+.headshot
+  border-radius: 100%
+  border-radius: 1px solid #9A7ADC
+  width: 150px
+  height: 150px
+  margin-bottom: 25px
+
+#colThree
+  background: #9A7ADC
+  color: #fff
+
+.whatWeDoContainer
+  h2
+    font-weight: bolder
+
+.formSubmit
+  border: 0px
+  border-radius: 3px
+  color: #FFF
+  background: #9A7ADC
+  transition: background .5s ease
+
+.formSubmit:hover
+  cursor: pointer
+  background: #DC7CFE
+
+.colFive
+  background: #9A7ADC
+  color: #FFF
+
+.footer
+  background: #9A7ADC
+  color: #fff
+  p
+    font-size: 17px
+    margin: 0px
+  a
+    text-decoration: underline
+
+@include bp(baby-bear)
+  .title
+    font-size: 3em
+
+  .scroll
+    font-size: 1em
